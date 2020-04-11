@@ -1,0 +1,16 @@
+
+@keyframes example {
+    from {height: 300px;}
+    to {height: 10px;}
+  }
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 300px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+
