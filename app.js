@@ -90,18 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
         onlyLastTwoCardLeft()
     }
 
-    function checkCardClickedBefore(cardId) {
-        //if(checkAlready.includes(cardId))
-        //console.log(cardId + 'clicked before');
-        checkAlready.push(cardId)
-    }
-
     function flipCard() {
         var cardId = this.id;
         this.setAttribute('src', CardsArray[cardId].img)
         cardsChosen.push(CardsArray[cardId])
         cardsChosenId.push(cardId)
-        checkCardClickedBefore(cardId)
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500)
         }
